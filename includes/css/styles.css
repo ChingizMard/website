@@ -1,0 +1,216 @@
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+   .content {
+      background-color: white;
+   }
+   .jumbotron{
+      background-image: url('../../images/crossword.png');
+
+      margin-bottom: 0px;
+
+      -webkit-box-shadow: 0px 0px 49px 2px rgba(0,0,0,0.84);
+      -moz-box-shadow: 0px 0px 49px 2px rgba(0,0,0,0.84);
+      box-shadow: 0px 0px 49px 2px rgba(0,0,0,0.84);
+   }
+
+   i.icon-large{
+      position: absolute;
+      margin-left: 10%;
+   }
+
+   a.menu-link{
+      //margin-left: 18%;
+   }
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+/* Top jumbotron */
+   #topJumbotron {
+       position: relative;
+       margin-bottom: 0;
+   }
+   
+
+
+   img.bg {
+       top:0px;
+       /* Set up proportionate scaling */
+       width: 100%;
+       height: auto;
+       
+       /* Set up positioning */
+       position: fixed;
+   }
+
+   /* Make last image be on top of the ending of the first */
+   #firstBackground{z-index: -20}
+   #secondBackground{z-index: -10}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+   #navSearch {
+       width: 200px;
+   }
+   .navbar-brand {
+       padding: 13px 15px;
+   }
+   #logo {
+       width: auto;
+       height: 16px;
+   }
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+
+   footer{
+      background: #333;
+      color: #eee;
+      font-size: 11px;
+      padding: 20px;
+   }
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Huge Desktops */
+   @media (min-width: 1200px) {
+       #test {
+         color: orange;
+       }
+       #topJumbotron {
+         margin-top: 30%;
+         margin-bottom: 30%;
+       }
+       #firstBackground{
+         content: url('../../images/chingiz_large.png');
+         top: 0px;
+       }
+       #secondBackground{
+         content: url('../../images/chingiz_two.png');
+         top:650px;
+       }
+   }
+
+/* Laptops */
+   @media (max-width: 1200px) {
+       #test {
+         color: blue;
+       }
+       #topJumbotron {
+         margin-top: 40%;
+         margin-bottom: 40%;
+       }
+       #firstBackground{
+         content: url('../../images/chingiz_laptop.png');
+         top: -5px;
+       }
+      #secondBackground{
+         
+         content: url('../../images/chingiz_two_laptop.png');         
+         top:800px;
+       }
+   }
+/* More percise set-up for the second image */
+   @media (max-width: 992px) {
+      #secondBackground{
+         
+         content: url('../../images/chingiz_two_laptop.png');         
+         top:950px;  /* This part had to be modified */
+       }
+   }
+
+
+/* Landscape phone to portrait tablet */
+   @media (max-width: 768px) {
+       #test {
+         color: green;
+       }
+       #topJumbotron {
+         margin-top: 50%;
+         margin-bottom: 50%;
+       }
+       #firstBackground{
+         content: url('../../images/chingiz_medium.png');
+         top: -15px;
+       }
+      #secondBackground{
+         min-width: 100%;
+         height: auto;
+         content: url('../../images/chingiz_two_medium.png');         
+         top:950px;
+       }
+   }
+
+  
+   /* More percise set-up for the second image */
+   @media (max-width: 550px) {
+      #secondBackground{
+         min-width: 100%;
+         height: auto;
+         content: url('../../images/chingiz_two_medium.png');         
+         top:1200px;
+       }
+   }
+
+/* Portrait & landscape phone */
+   @media (max-width: 480px) {
+       #test {
+         color: red;
+       }
+       #topJumbotron {
+         margin-top: 70%;
+         margin-bottom: 70%;
+       }
+      #firstBackground{
+         content: url('../../images/chingiz_small.png');
+         top: 40px;
+       }
+      #secondBackground{
+         content: url('../../images/chingiz_two_small.png');         
+         top:1380px;
+       }
+
+   }
+  
+/* Very small devices */  
+  @media (max-width: 350px) {
+       #test {
+         color: red;
+       }
+       #topJumbotron {
+         margin-top: 70%;
+         margin-bottom: 70%;
+       }
+      #firstBackground{
+         content: url('../../images/chingiz_small.png');
+         top: 40px;
+       }
+      #secondBackground{
+         content: url('../../images/chingiz_two_small.png');         
+         top:1980px;
+       }
+
+   }
+
+
