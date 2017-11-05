@@ -79,6 +79,16 @@
 /* --------------------------------------
    Footer
    -------------------------------------- */
+   .social-icon{
+    width:20%;
+    fill:red;
+   }
+
+   #social-section{
+    border-left: solid 2px;
+    border-left-color: white;
+    padding-bottom: 1%; 
+   }
 
    footer{
       background: #333;
