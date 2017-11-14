@@ -30,13 +30,17 @@
 
 
 /* Top jumbotron */
-   #topJumbotron {
-       position: relative;
-       margin-bottom: 0;
-   }
    
-  .products-line{
+  .products-row{
     margin-top: 5%;
+  }
+
+  .products-row .product-line {
+    min-height: 200px;
+  }
+  .products-row .product-line .product-image img {
+    width: 100%;
+    max-width: 175px;
   }
 
 
@@ -59,10 +63,6 @@
        /* Set up positioning */
        position: fixed;
    }
-
-   /* Make last image be on top of the ending of the first */
-   #firstBackground{z-index: -20}
-   #secondBackground{z-index: -10}
 
 /* --------------------------------------
    Typography
@@ -91,7 +91,7 @@
    Carousel
    -------------------------------------- */
    .tech-icon{
-    font-size: 11rem;
+    font-size: 9rem;
     color: #9ea0a3;
     margin-right: 20px;
    }
@@ -139,6 +139,54 @@ ul.horizontal-slide li[class*="col"]:first-child {
    }
 
 
+ /* --------------------------------------
+   Background Images
+   -------------------------------------- */
+ .top-section:hover #firstBackground:after {
+   opacity: 0.5;
+   background-color: #000000;
+ }
+
+ .top-section:hover .hidden-overlay-container {
+   display: block;
+   color: white;
+ }
+
+ #firstBackground{
+   background-image: url(../../images/chingiz_large.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center 15%;
+   background-attachment: fixed;
+   min-height: 400px;
+   position: relative;
+ }
+
+ #firstBackground:after {
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+}
+
+ .hidden-overlay-container {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 53%;
+ }
+
+ #secondBackground{
+   background-image: url(../../images/chingiz_two.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 65% center;
+   background-attachment: fixed;
+   min-height: 400px;
+ }
 
 /* --------------------------------------
    Media Queries
@@ -149,18 +197,6 @@ ul.horizontal-slide li[class*="col"]:first-child {
        #test {
          color: orange;
        }
-       #topJumbotron {
-         margin-top: 30%;
-         margin-bottom: 30%;
-       }
-       #firstBackground{
-         content: url('../../images/chingiz_large.png');
-         top: 0px;
-       }
-       #secondBackground{
-         content: url('../../images/chingiz_two.png');
-         top:650px;
-       }
    }
 
 /* Laptops */
@@ -168,27 +204,10 @@ ul.horizontal-slide li[class*="col"]:first-child {
        #test {
          color: blue;
        }
-       #topJumbotron {
-         margin-top: 40%;
-         margin-bottom: 40%;
-       }
-       #firstBackground{
-         content: url('../../images/chingiz_laptop.png');
-         top: -5px;
-       }
-      #secondBackground{
-         
-         content: url('../../images/chingiz_two_laptop.png');         
-         top:800px;
-       }
    }
 /* More percise set-up for the second image */
    @media (max-width: 992px) {
-      #secondBackground{
-         
-         content: url('../../images/chingiz_two_laptop.png');         
-         top:950px;  /* This part had to be modified */
-       }
+      
    }
 
 
@@ -197,31 +216,12 @@ ul.horizontal-slide li[class*="col"]:first-child {
        #test {
          color: green;
        }
-       #topJumbotron {
-         margin-top: 50%;
-         margin-bottom: 50%;
-       }
-       #firstBackground{
-         content: url('../../images/chingiz_medium.png');
-         top: -15px;
-       }
-      #secondBackground{
-         min-width: 100%;
-         height: auto;
-         content: url('../../images/chingiz_two_medium.png');         
-         top:950px;
-       }
    }
 
   
    /* More percise set-up for the second image */
    @media (max-width: 550px) {
-      #secondBackground{
-         min-width: 100%;
-         height: auto;
-         content: url('../../images/chingiz_two_medium.png');         
-         top:1200px;
-       }
+      
    }
 
 /* Portrait & landscape phone */
@@ -229,37 +229,12 @@ ul.horizontal-slide li[class*="col"]:first-child {
        #test {
          color: red;
        }
-       #topJumbotron {
-         margin-top: 70%;
-         margin-bottom: 70%;
-       }
-      #firstBackground{
-         content: url('../../images/chingiz_small.png');
-         top: 40px;
-       }
-      #secondBackground{
-         content: url('../../images/chingiz_two_small.png');         
-         top:1380px;
-       }
-
    }
   
 /* Very small devices */  
   @media (max-width: 350px) {
        #test {
          color: red;
-       }
-       #topJumbotron {
-         margin-top: 70%;
-         margin-bottom: 70%;
-       }
-      #firstBackground{
-         content: url('../../images/chingiz_small.png');
-         top: 40px;
-       }
-      #secondBackground{
-         content: url('../../images/chingiz_two_small.png');         
-         top:1980px;
        }
 
    }

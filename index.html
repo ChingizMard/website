@@ -20,7 +20,6 @@
 
 <body>
     <!-- First Scrolable Image -->
-    <img class="bg" id="firstBackground" data-speed="2">
     <div class="container" id="mainContainer">
         <div class="navbar navbar-fixed-top">
             <div class="container">
@@ -50,7 +49,7 @@
 								<li class="dropdown-header">Downloads</li>
 								<li>
 									<i class="icon-large icon-download"></i>
-									<a class="menu-link" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume in PDF</a>
+									<a class="menu-link" href="./resume/LatestCV.pdf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume in PDF</a>
 								</li>
 										
 							</ul>
@@ -63,92 +62,103 @@
         <!--End Navbar-->
     </div>
     <!--Main container-->
+    <div class="top-section">
+        <div class="bg" id="firstBackground" data-speed="2"></div>
+        <div class="hidden-overlay-container">
+            <h1>Chingiz Mardanov</h1>
+            <h4>Software Developer</h4>
+            <div class="horizontal-line"></div>
+            <span class="skills"></span>
+        </div>
+    </div>
     <div class="jumbotron" id="topJumbotron" data-speed="10">
         <div class="container">
             
-
+            
             <h1 id="test">About me</h1>
             <p>
-                In this section I will tell you a little more about my technical skills. It is so happened that I had tried myself in so many different spheres: I was working as system administrator and tried to make my own Unity game, did web-development and learned machine learning and data analysis, but let's talk about everything in order. My first official job experience was as a system administrator at a company called BoreasBuild. What I would do is to setup IP telephony and teach users how to use 3cx, mail servers and web servers. I had to monitor Zabbix dashboard to make sure servers were running well.
+                My name is <span style="font-weight: 200;">Chingiz Mardanov</span> and I am a Software Engineer. I will graduate from Drexel University with Bachelors in Computer Science as well with minor in Electrical Engineering  in June of 2019. In a close future I would like to continue building up experience in Application Development and be able to apply it to Data Analytics and Machine Learning. I would also love to continue traveling and learn new languages.</p><p> 
+As for right now I am an iOS developer with a great passion to learn new things and discover new technologies. While working for “Booksmart Touring” I have built up a strong knowledge of design patterns, coding techniques and testing approaches for iOS development. In the meantime I am trying to get myself into the area of Data Analytics and Machine Learning related courses both in school and online. My strong knowledge of Python helps me with my interest. Prior to this amazing startup experience I was making hybrid application called “SampleManager Mobile” for “ThermoFisher Scientific”. I was using technologies such as Cordova, Knockout.js and DevExtreme. 
+</p><p>Sicne at Drexel we manage both school and work experience together let me tell you more about what I did in school. While in classes I again improved my profficiency in Python, Java and C++ as well as got some more experience in Application Development. Two projects that me and groupmates did were hybrid apps called “BarterBay” and “How Bad is the Hans”. First application was intended to help students exchnage items, while the second was built in order to warn others if the campus dining was especially bad today. For both applications I have participated in making frontend using Ionic and Angular.js as well as backend using Node.js and MongoDB. 
+</p><p>Even before college, when I was working as a Front-End developer in company called LPTSystems, where I was making websites for web-engines such as Bitrix, Wordpress and Drupal. I have also worked as a System Administrator at BoreasBuild, where I learned Unix based systems, setting up web, mail and telephony servers. 
+</p><p>Overall I have tried myself in many different areas and that helped me to be where where I am right now. Hopefully I got you interested and if I did, you can read on about more personal aspects of my life.
+
             </p>
-            <p> My next work position was at ThermoFisher Scientific. I was a part of a small team of developers that was working on a hybrid application called “Sample Manager”. We used a mix of Knockout.js and DevExtreme. That was my first experience of working in a big company and I have to say it was interesting. I had to email a backend team that was located across the Atlantic to resolve a little API issue, which I think was not super efficient. On the other hand that helped me improve my written communication skills, since every misunderstanding might lead to few days of waiting. Since I have started talking about the hybrid applications, I have more to mention. While being at Drexel I had to do many projects and some of them required application development. Two hybrid projects that you can see on my GitHub are BarterBay and Handschumacher Rating. The first one was made in order to let students trade their textbooks. App would have a list of items being traded and the ability to chat if you found something you want. I partially worked on both UI and XMPP messaging server. The rating app we made, whose original name was “How bad is the Hans” was built in order to warn people if the local college cafeteria was especially bad today. In both cases we used Ionic + Angular.
-            </p>
-     		
             <hr>
-			
-            <div class="row products-line">
-	            <div class="col-xs-6 col-md-3 col-lg-6">
-	            	<div class="col-xs-6 col-md-3 col-lg-4">
-	            		<a href="https://itunes.apple.com/us/app/booksmart-touring/id917043634?mt=8">
-							<img src="./images/apps/booksmart.jpg" class="img-rounded tint" alt="Cinque Terre">
-						</a>
-					</div>
 
-					<div class="col-xs-6 col-md-3 col-lg-8">
-						<a href="https://itunes.apple.com/us/app/booksmart-touring/id917043634?mt=8">
-							<h3>Booksmart Touring</h3>
-						</a>
-						<p class="thumbnail-detail">Booksmart is the best solution for tour managers and artists on the road. Made with Swift 3 and frameworks like RealmDB and Eureka</p>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-3 col-lg-6">
-					<div class="col-xs-6 col-md-3 col-lg-4">
-						<a href="https://itunes.apple.com/us/app/samplemanager-mobile/id1122642234?mt=8">
-							<img src="./images/apps/samplemanager.jpg" class="img-rounded tint"></img>
-						</a>	
-						
-					</div>
-					<div class="col-xs-6 col-md-3 col-lg-8">
-						<a href="https://itunes.apple.com/us/app/samplemanager-mobile/id1122642234?mt=8">
-							<h3>SampleManager Mobile</h3>
-						</a>
-						<p class="thumbnail-detail">This app lets you connect to SampleManager LIMS using a mobile device. 
-						Uses technologies like Cordova, Knockout.js and DevExtreme.</p>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-
+            <!-- Skills Section -->
+            <div class="container tech-row">
+                    <div class="row">
+                        <div class="col-md-12">
+                          <ul class="horizontal-slide">
+                            <li class="col-md-2"><i class="devicon-python-plain-wordmark tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-swift-plain-wordmark tech-icon"></i>
+                            <li class="col-md-2"><i class="devicon-javascript-plain tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-java-plain-wordmark tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-amazonwebservices-plain-wordmark tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-angularjs-plain tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-mongodb-plain-wordmark tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-git-plain tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-github-plain-wordmark tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-html5-plain tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-jquery-plain-wordmark tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-linux-plain tech-icon"></i></li>
+                            <li class="col-md-2"><i class="devicon-mysql-plain tech-icon"></i></li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+            <!-- End Skills Section -->
         </div>
     </div>
+    <div class="bg" id="secondBackground" data-speed="2"></div>
     <!-- Second Image Between Jambotrons -->
-    <img class="bg" id="secondBackground" data-speed="2">
     <div class="jumbotron" id="secondJumbotron" data-speed="10">
         <div class="container">
-<h1 id="test">Hello</h1>
+<h1 id="test">Personal Life</h1>
             <p>
-                The only purpose of this page, is to tell you who I am and show you that I can use basic javascript and CSS. I was born on 21st December of 1996 in a city called Kazan. I like to say that it is located very close to Moscow, but once I specify that it is 700 kilometers away, people start laughing for some reason. Yeah, my country is big. Since Russia is separated into regions that are similar to states, Kazan is a capital of a state called Tatarstan. Tatarstan republic is a great place with the most friendly people you can find in Russia. It is very different from the rest of the country and I strongly recommend you to visit it. </p>
+                I was born on 21st December of 1996 in a city called Kazan. I like to say that it is located very close to Moscow, but once I specify that it is 700 kilometers away, people start laughing for some reason. Yeah, my country is big. Since Russia is separated into regions that are similar to states, Kazan is a capital of a state called Tatarstan. Tatarstan republic is a great place with the most friendly people you can find in Russia. It is very different from the rest of the country and I strongly recommend you to visit it. </p>
             <p>When I was 12 years old me and my family moved to Kazakhstan, Almaty. Even though Tatar language is sort of similar to Kazakh, my parents decided that I won't be able to study in Kazakh in a local school, so I was sent to an international school where everything was taught in English. Do I have to say that my English was worse than my Kazakh? Well it was. First few months were quite rough, but as the time was going by I was getting better and better in English and after six months I felt comfortable. I got myself into coding while studying in Almaty International School. I got my first laptop and started to learn AppleScript. I wrote simple scripts and made widgets for desktop. Apparently they became quite popular in a small community, and I have decided that coding and making things is what I want to do in life. Overall, year in Kazakhstan was a very happy and productive one. When a year later I had to go back to Kazan I was positive that I don’t want to go back into a very traditional and conservative education system. I decided that I will try to apply for US colleges. I was 13. Usually I try to accomplish things that I decide for myself, so 4 years later, I got into Drexel, where I study till now. </p>
-            <p>My major is Computer Science with a concentration in Information Security and minor in Electrical Engineering. Being an international student from Russia I had encountered many different situations. I was blamed for all sorts of things, starting from me taking over Crimea and finishing with hacking American elections. Even though most of those appeals to me were jokes some of the actually taught me to deal with conflict situations very well. Another benefit of the fact that I come from overseas, is that I have a passion for traveling. I used to travel a lot with my parents and this hobby still stays with me. While being abroad in US college, I went abroad to live for half a year in Singapore which I found to be an amazing time. In my free time I like to learn new things, new technologies or skills.
+            <p>Being an international student from Russia I had encountered many different situations. I was blamed for all sorts of things, starting from me taking over Crimea and finishing with hacking American elections. Even though most of those appeals to me were jokes, some of the actually taught me to deal with conflict situations very well. Another benefit of the fact that I come from overseas, is that I have a passion for traveling. I used to travel a lot with my parents and this hobby still stays with me. While being abroad in US college, I went abroad to live for half a year in Singapore which I found to be an amazing time. In my free time I like to learn new things, new technologies or skills.
             </p>
-
-            	<div class="container tech-row">
-			        <div class="row">
-			            <div class="col-md-12">
-			              <ul class="horizontal-slide">
-			                <li class="col-md-2"><i class="devicon-python-plain-wordmark tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-swift-plain-wordmark tech-icon"></i>
-			                <li class="col-md-2"><i class="devicon-javascript-plain tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-java-plain-wordmark tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-amazonwebservices-plain-wordmark tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-angularjs-plain tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-mongodb-plain-wordmark tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-git-plain tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-github-plain-wordmark tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-html5-plain tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-jquery-plain-wordmark tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-linux-plain tech-icon"></i></li>
-			                <li class="col-md-2"><i class="devicon-mysql-plain tech-icon"></i></li>
-			              </ul>
-			          </div>
-			        </div>
-			    </div>
-
         </div>
+
+        <hr/>
+
+        <!-- Product Section -->
+        <div class="row products-row">
+                <div class="product-line col-xs-12 col-md-12 col-lg-6">
+                    <div class="product-image col-xs-4 col-md-4 col-lg-4">
+                        <a href="https://itunes.apple.com/us/app/booksmart-touring/id917043634?mt=8">
+                            <img src="./images/apps/booksmart.jpg" class="img-rounded tint" alt="Cinque Terre">
+                        </a>
+                    </div>
+
+                    <div class="product-description col-xs-8 col-md-8 col-lg-8">
+                        <a href="https://itunes.apple.com/us/app/booksmart-touring/id917043634?mt=8">
+                            <h3>Booksmart Touring</h3>
+                        </a>
+                        <p class="thumbnail-detail">Booksmart is the best solution for tour managers and artists on the road. Made with Swift 3 and frameworks like RealmDB and Eureka</p>
+                    </div>
+                </div>
+                <div class="product-line col-xs-12 col-md-12 col-lg-6">
+                    <div class="product-image col-xs-4 col-md-4 col-lg-4">
+                        <a href="https://itunes.apple.com/us/app/samplemanager-mobile/id1122642234?mt=8">
+                            <img src="./images/apps/samplemanager.jpg" class="img-rounded tint"></img>
+                        </a>    
+                        
+                    </div>
+                    <div class="product-description col-xs-8 col-md-8 col-lg-8">
+                        <a href="https://itunes.apple.com/us/app/samplemanager-mobile/id1122642234?mt=8">
+                            <h3>SampleManager Mobile</h3>
+                        </a>
+                        <p class="thumbnail-detail">This app lets you connect to SampleManager LIMS using a mobile device. 
+                        Uses technologies like Cordova, Knockout.js and DevExtreme.</p>
+                    </div>
+                </div>
+            </div>
+        <!-- End Product Section -->
+
     </div>
     
 
@@ -195,8 +205,6 @@
     </script>
     <!-- Bootstrap JS -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="includes/js/script.js"></script>
 </body>
 
 </html>
